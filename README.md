@@ -1,9 +1,15 @@
 # Jaamo photo exporter
 
 A script to download all photos from the Jaamo app at once.
-Built since Jaamo lacks this functionability, and saving 900+ photos and then adding the date and caption, one by one would be a pain in the \*ss.
 
-The script will iterate through app's html to download every photo and store it, using it's date and description. Longer descriptions will be stored in a separate text file.
+The script will iterate through the app's gallery page html, to download every photo and store it, using it's date and description. Longer descriptions will be stored in a separate text file.
+
+> **NOTE:**
+> This tool, nor myself, are in any way related to Jaamo or Jaamo b.v.
+> As a user of their parent-app, I am just working around the lack of this functionability in the official app and thus not having to go by 1800+ photo's one by one.
+>
+> - The script does not have access to your Jaamo account, so in no way can it access or affect any photo's or other data in your Jaamo account.
+> - Since the script makes use of css selectors, it might not work as expected, as soon as Jaamo changes anything on their page. I will not be actively maintaining it.
 
 ### Run the script
 
@@ -14,7 +20,7 @@ The script can be run from cli.
 3. Run the script: `elixir jaamo_photo_exporter.exs`
    If the input is located in another file, pass the path to it like this:
    `INPUT_FILE=input/example.html elixir jaamo_photo_exporter.exs`
-4. Output can be found in the `output` foler
+4. Output can be found in the `output` folder
 
 Give it a try: `INPUT_FILE=input/example.html elixir jaamo_photo_exporter.exs`
 
