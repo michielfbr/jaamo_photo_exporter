@@ -4,6 +4,7 @@ defmodule JaamoPhotoExporter do
     print("Jaamo image export", :blue_background)
 
     print("Installing dependencies")
+    Mix.install([{:floki, "~> 0.36.2"}, {:req, "~> 0.5.6"}])
 
     print("Reading input file")
 
@@ -32,6 +33,7 @@ defmodule JaamoPhotoExporter do
             {1, new_date}
 
           _ ->
+            download_and_save_file(item, "#{base_folder}/#{current_date} #{file_no}")
             {file_no + 1, current_date}
         end
       end)
@@ -43,6 +45,39 @@ defmodule JaamoPhotoExporter do
   end
 
   defp get_date_from_item(_), do: {:error, :no_date}
+
+  defp download_and_save_file(
+         {"div", [{"class", "image_canvas col-3 pe-2 pb-2"}], [contents]},
+         file_name_base
+       ) do
+    [url] = Floki.attribute(contents, "href")
+
+    with {:ok, image_data} <- download_image(url) do
+      write_file("#{file_name_base}.jpeg", image_data)
+    end
+  end
+
+  defp write_file(filename, data) do
+    if File.exists?(filename) do
+      raise "File allready exists, can't overwrite: #{filename}"
+    else
+      print(filename)
+      File.write(filename, data)
+    end
+  end
+
+  defp download_and_save_file(_, _), do: :no_file
+
+  defp download_image(url) do
+    case Req.get(url) do
+      {:ok, %{status: 200, body: body}} ->
+        {:ok, body}
+
+      {_, error} ->
+        print("Image download failed", :red)
+        {:error, :no_image}
+    end
+  end
 
   defp map_month("januari"), do: "01"
   defp map_month("februari"), do: "02"
