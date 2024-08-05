@@ -53,7 +53,12 @@ defmodule JaamoPhotoExporter do
     [url] = Floki.attribute(contents, "href")
 
     with {:ok, image_data} <- download_image(url) do
-      write_file("#{file_name_base}.jpeg", image_data)
+      {title, caption} = Floki.find(contents, "p") |> Floki.text() |> parse_caption()
+      title = if title, do: " #{title}", else: ""
+
+      write_file("#{file_name_base}#{title}.jpeg", image_data)
+
+      if caption, do: write_file("#{file_name_base}.txt", caption)
     end
   end
 
@@ -77,6 +82,33 @@ defmodule JaamoPhotoExporter do
         print("Image download failed", :red)
         {:error, :no_image}
     end
+  end
+
+  defp parse_caption(""), do: {nil, nil}
+
+  defp parse_caption(caption) do
+    formatted_caption = format_caption(caption)
+
+    if String.length(formatted_caption) < 120 do
+      {formatted_caption, nil}
+    else
+      title =
+        formatted_caption
+        |> String.split(". ")
+        |> hd
+        |> format_caption()
+
+      {title, caption}
+    end
+  end
+
+  defp format_caption(text) do
+    text
+    |> String.replace("\n", " ")
+    |> String.replace("\r", " ")
+    |> String.replace(["    ", "   ", "  "], " ")
+    |> String.trim_trailing(".")
+    |> String.trim()
   end
 
   defp map_month("januari"), do: "01"
