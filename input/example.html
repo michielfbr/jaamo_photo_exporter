@@ -1,0 +1,417 @@
+<html>
+  <head class="parent_app">
+    <title>OuderApp</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta
+      name="csrf-token"
+      content="YdEjVTlIucnEV0iLVq2ck+G7oAQWW9NACPdV8wUR5jZwBUGUnbbTUiRqTmiLOPMt4ynebCUX5TMIUiiy7+J4Lw=="
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/favicon-311ec80be529ff01aec78de6d67f7a360b3987ca707ed9f16457231fb69d21c0.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      media="all"
+      href="/assets/parent_app/application-2e1f382c5887d5d9378b78e39554c66f1c86cf35f0a98474fe4b4640ed16c6b0.css"
+    />
+    <script src="/assets/parent_app/application-6d4dfee2ab015b5870862d02668e0b72f58e4eccf14698bdb72653af1819b5bc.js"></script>
+  </head>
+  <body class="authenticated">
+    <div class="center-wrapper">
+      <div class="side"></div>
+      <div class="main-content parent_app">
+        <nav
+          class="navbar navbar_header navbar-expand-lg navbar-light bg-white fixed-top"
+        >
+          <div class="container-fluid justify-content-start px-2 mt-2 mb-1">
+            <div class="col-6 ps-2">
+              <a href="/ouders/timelines"
+                ><img
+                  class="logo"
+                  src="/assets/parent_app/clients/logo_jaamo-56869d87341bea0711380e7aa367036b9bf3e07462f0570ad35187a4f2a7a02c.png"
+              /></a>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><div class="d-flex align-items-center">
+                  <div class="user_full_name pe-1 fw-bold fs-5 text-black">
+                    John Doe
+                  </div>
+                  <div
+                    class="thumbnail_container border-0 p-0 rounded-circle img-thumbnail d-flex align-items-center justify-content-center header overflow-hidden"
+                  >
+                    <img
+                      alt="H.R. Nusselder"
+                      class="thumbnail img-fluid"
+                      src="/assets/user_profile_dummy-79115c8419d3cf420ff2c6b1516b700b972cf56cd9671b11b1b1755bdb5cf7a4.png"
+                    />
+                  </div>
+                </div>
+                <div class="unread_indicator">
+                  <i class="mdi mdi-circle-medium text_magenta"></i></div
+              ></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="text-black dropdown-item"
+                    href="/ouders/notifications"
+                    ><i class="mdi mdi-bell-outline"></i> Meldingen
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    data-method="delete"
+                    class="text-black dropdown-item"
+                    href="/logout?client_name=jaamo"
+                    ><i class="mdi mdi-logout"></i> Uitloggen
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="yield">
+          <script type="text/javascript"></script>
+          <div class="photos">
+            <div class="container-fluid bg-white pt-2 pb-2 fixed-top px-2">
+              <a
+                class="back_link d-flex align-items-center font_semi_bold font_small text-decoration-none"
+                href="/ouders/accounts"
+                ><i class="mdi mdi-chevron-left back_link_icon"></i>Naar account
+              </a>
+              <div class="d-flex justify-content-between align-items-center">
+                <h1 class="ps-1 m-0">
+                  <i class="mdi mdi-image-outline"></i
+                  ><span>Foto&#39;s voor Example</span>
+                </h1>
+              </div>
+            </div>
+            <div
+              class="container-fluid with_back_link rounded_top content_start text-center"
+            >
+              <div class="px-2">
+                <div class="image_gallery d-flex flex-wrap mx-2">
+                  <div class="col-12 font_semi_bold text-start">
+                    19 juni 2024
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a href="https://picsum.photos/800/600"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-745900"
+                        data-src="https://picsum.photos/800/600"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://picsum.photos/800/600"
+                        />
+                      </div>
+                      <div id="caption-745900" style="display: none">
+                        <p></p></div
+                    ></a>
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a href="https://picsum.photos/800/600"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-745897"
+                        data-src="https://picsum.photos/800/600"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://picsum.photos/800/600"
+                        />
+                      </div>
+                      <div id="caption-745897" style="display: none">
+                        <p>Description for this photo.</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a href="https://picsum.photos/800/600"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-745895"
+                        data-src="https://picsum.photos/800/600"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://picsum.photos/800/600"
+                        />
+                      </div>
+                      <div id="caption-745895" style="display: none">
+                        <p>Description for this photo.</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a href="https://picsum.photos/800/600"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-745891"
+                        data-src="https://picsum.photos/800/600"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://picsum.photos/800/600"
+                        />
+                      </div>
+                      <div id="caption-745891" style="display: none">
+                        <p>
+                          This is a very long description example. Captions may
+                          be well over 120 symbols in Jaamo. While exporting
+                          photo&#39;s via this script, short captions will be
+                          added to the photo filename. Longer captions will be
+                          stored in a separate text file, along with the photo.
+                          The first scentence of the long caption will also be
+                          added to the photo filename.
+                        </p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/745890/99062a2c8a_5D6BCC41-9C3B-4A8C-816E-4D52681E4F38.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=417705a3754a9428e1412862b0eab01d69caa87185200a66788fcd820ecfe0ee"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-745890"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/745890/99062a2c8a_5D6BCC41-9C3B-4A8C-816E-4D52681E4F38.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=417705a3754a9428e1412862b0eab01d69caa87185200a66788fcd820ecfe0ee"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/745890/99062a2c8a_5D6BCC41-9C3B-4A8C-816E-4D52681E4F38.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=417705a3754a9428e1412862b0eab01d69caa87185200a66788fcd820ecfe0ee"
+                        />
+                      </div>
+                      <div id="caption-745890" style="display: none">
+                        <p></p></div
+                    ></a>
+                  </div>
+                  <div class="mt-4 col-12"></div>
+                  <div class="col-12 font_semi_bold text-start">
+                    18 juni 2024
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744426/9c944a652e_0A4DAC2B-DADB-4E6D-A29B-60D28E8C2735.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cc86d0cbbb4c5a7a0ffd45e466b94b8db0fab289de91d3cef549d66e18d4a760"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744426"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744426/9c944a652e_0A4DAC2B-DADB-4E6D-A29B-60D28E8C2735.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cc86d0cbbb4c5a7a0ffd45e466b94b8db0fab289de91d3cef549d66e18d4a760"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744426/9c944a652e_0A4DAC2B-DADB-4E6D-A29B-60D28E8C2735.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cc86d0cbbb4c5a7a0ffd45e466b94b8db0fab289de91d3cef549d66e18d4a760"
+                        />
+                      </div>
+                      <div id="caption-744426" style="display: none">
+                        <p>Description for this photo.</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744422/c21cf55b7e_1768519E-BF3D-4DFE-901B-50E7F6F3FA09.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3f3ae1b5ad81071543b270148a482a0296d14e7fc259762e88c4fa9cca132f50"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744422"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744422/c21cf55b7e_1768519E-BF3D-4DFE-901B-50E7F6F3FA09.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3f3ae1b5ad81071543b270148a482a0296d14e7fc259762e88c4fa9cca132f50"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744422/c21cf55b7e_1768519E-BF3D-4DFE-901B-50E7F6F3FA09.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3f3ae1b5ad81071543b270148a482a0296d14e7fc259762e88c4fa9cca132f50"
+                        />
+                      </div>
+                      <div id="caption-744422" style="display: none">
+                        <p>Description for this photo.</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744420/5828d16ffd_CD7D4F5F-FBF1-4585-AFF7-0F5D93542ADB.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=58b94c9c3050518030b0502f7c5b4357018ef1fe7c57ad0dd8a862678bae0d36"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744420"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744420/5828d16ffd_CD7D4F5F-FBF1-4585-AFF7-0F5D93542ADB.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=58b94c9c3050518030b0502f7c5b4357018ef1fe7c57ad0dd8a862678bae0d36"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744420/5828d16ffd_CD7D4F5F-FBF1-4585-AFF7-0F5D93542ADB.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=58b94c9c3050518030b0502f7c5b4357018ef1fe7c57ad0dd8a862678bae0d36"
+                        />
+                      </div>
+                      <div id="caption-744420" style="display: none">
+                        <p>Description for this photo.</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744198/daf9606d8f_C708A657-C497-417F-93F0-59AB9F98DEFE.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e289d5ac025e5960a9993216a48a15cf2064f49f149642fba0f14fb8e15cbb92"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744198"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744198/daf9606d8f_C708A657-C497-417F-93F0-59AB9F98DEFE.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e289d5ac025e5960a9993216a48a15cf2064f49f149642fba0f14fb8e15cbb92"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744198/daf9606d8f_C708A657-C497-417F-93F0-59AB9F98DEFE.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e289d5ac025e5960a9993216a48a15cf2064f49f149642fba0f14fb8e15cbb92"
+                        />
+                      </div>
+                      <div id="caption-744198" style="display: none">
+                        <p>Description for this photo.</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744196/0e63c65026_E5AD478A-D686-4C15-B1CD-DE8269E1EC7D.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1c74cb2dafc6cdfae50a1607db409f9c0903e36af2252f457271a12558a90802"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744196"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744196/0e63c65026_E5AD478A-D686-4C15-B1CD-DE8269E1EC7D.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1c74cb2dafc6cdfae50a1607db409f9c0903e36af2252f457271a12558a90802"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744196/0e63c65026_E5AD478A-D686-4C15-B1CD-DE8269E1EC7D.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1c74cb2dafc6cdfae50a1607db409f9c0903e36af2252f457271a12558a90802"
+                        />
+                      </div>
+                      <div id="caption-744196" style="display: none">
+                        <p>Description for this photo.</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744192/9c07325c16_65161118-A765-41E3-8954-7CA362E123B5.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f6b8710e626ba38505f5ce3c9cd56d2371996a5fb94ed2f5062df0095395ef0f"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744192"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744192/9c07325c16_65161118-A765-41E3-8954-7CA362E123B5.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f6b8710e626ba38505f5ce3c9cd56d2371996a5fb94ed2f5062df0095395ef0f"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744192/9c07325c16_65161118-A765-41E3-8954-7CA362E123B5.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f6b8710e626ba38505f5ce3c9cd56d2371996a5fb94ed2f5062df0095395ef0f"
+                        />
+                      </div>
+                      <div id="caption-744192" style="display: none">
+                        <p></p></div
+                    ></a>
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744190/42747b009b_7E62B653-EFCA-410F-BB84-BA20BE42D520.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5c0bc8bce0d251fb0ea767c39ced4356e2ee04803220e7c5b4cb84b86421f938"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744190"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744190/42747b009b_7E62B653-EFCA-410F-BB84-BA20BE42D520.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5c0bc8bce0d251fb0ea767c39ced4356e2ee04803220e7c5b4cb84b86421f938"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744190/42747b009b_7E62B653-EFCA-410F-BB84-BA20BE42D520.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5c0bc8bce0d251fb0ea767c39ced4356e2ee04803220e7c5b4cb84b86421f938"
+                        />
+                      </div>
+                      <div id="caption-744190" style="display: none">
+                        <p></p></div
+                    ></a>
+                  </div>
+                  <div class="image_canvas col-3 pe-2 pb-2">
+                    <a
+                      href="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744189/869b848169_2424E26A-782E-4490-B624-251F4A711872.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=bcdb71f7a1cb0fe124c26fb23c6c292cdec8e622dd40b5fd04b71befe9fa8760"
+                      ><div
+                        class="image_container"
+                        data-sub-html="#caption-744189"
+                        data-src="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744189/869b848169_2424E26A-782E-4490-B624-251F4A711872.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=bcdb71f7a1cb0fe124c26fb23c6c292cdec8e622dd40b5fd04b71befe9fa8760"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="/empty-rectangle.jpg"
+                          data-original="https://jaamo-jaamo-app.s3.eu-central-1.amazonaws.com/pictures/uploaded_picture/image/744189/869b848169_2424E26A-782E-4490-B624-251F4A711872.jpeg.jpeg?X-Amz-Expires=600&amp;X-Amz-Date=20240804T203057Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIATPKCF5QJMN5HYIUQ%2F20240804%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=bcdb71f7a1cb0fe124c26fb23c6c292cdec8e622dd40b5fd04b71befe9fa8760"
+                        />
+                      </div>
+                      <div id="caption-744189" style="display: none">
+                        <p></p></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white fixed-bottom navbar_footer"
+        >
+          <div class="container-fluid text-center">
+            <div class="col">
+              <a href="/ouders/timelines"
+                ><i class="mdi mdi-home-outline"></i><label>Home</label></a
+              >
+            </div>
+            <div class="col">
+              <a href="/ouders/mailboxes"
+                ><div class="unread_counter">
+                  <div class="badge text_bg_magenta">10</div>
+                </div>
+                <i class="mdi mdi-email-outline"></i><label>Berichten</label></a
+              >
+            </div>
+            <div class="col">
+              <a href="/ouders/locations"
+                ><i class="mdi mdi-map-marker-outline"></i
+                ><label>Locaties</label></a
+              >
+            </div>
+            <div class="col">
+              <a href="/ouders/planning"
+                ><i class="mdi mdi-calendar-outline"></i
+                ><label>Planning</label></a
+              >
+            </div>
+            <div class="col active">
+              <a href="/ouders/accounts"
+                ><i class="mdi mdi-account-box-outline"></i
+                ><label>Account</label></a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="side"></div>
+    </div>
+  </body>
+</html>

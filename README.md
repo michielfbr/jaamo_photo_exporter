@@ -16,6 +16,8 @@ The script can be run from cli.
    `INPUT_FILE=input/example.html elixir jaamo_photo_exporter.exs`
 4. Output can be found in the `output` foler
 
+Give it a try: `INPUT_FILE=input/example.html elixir jaamo_photo_exporter.exs`
+
 > **NOTE:**
 > Jaamo source images are stored at AWS. The path to them, retrieved from the html page, contains an auth token which is only valid for 10 minutes.
 > Therefore the script should be run immediately after refreshing and saving the html page.

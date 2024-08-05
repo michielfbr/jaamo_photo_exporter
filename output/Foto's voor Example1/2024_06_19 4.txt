@@ -1,0 +1,8 @@
+This is a very long description example. Captions may
+be well over 120 symbols in Jaamo. While exporting
+photo's via this script, short captions will be
+added to the photo filename. Longer captions will be
+stored in a separate text file, along with the photo.
+The first scentence of the long caption will also be
+added to the photo filename.
+                        
