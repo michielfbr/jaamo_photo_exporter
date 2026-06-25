@@ -112,17 +112,40 @@ defmodule JaamoPhotoExporter do
   end
 
   defp map_month("januari"), do: "01"
+  defp map_month("jan"), do: "01"
+
   defp map_month("februari"), do: "02"
+  defp map_month("feb"), do: "02"
+
   defp map_month("maart"), do: "03"
+  defp map_month("mrt"), do: "03"
+
   defp map_month("april"), do: "04"
+  defp map_month("apr"), do: "04"
+
   defp map_month("mei"), do: "05"
+
   defp map_month("juni"), do: "06"
+  defp map_month("jun"), do: "06"
+
   defp map_month("juli"), do: "07"
+  defp map_month("jul"), do: "07"
+
   defp map_month("augustus"), do: "08"
+  defp map_month("aug"), do: "08"
+
   defp map_month("september"), do: "09"
+  defp map_month("sep"), do: "09"
+
   defp map_month("oktober"), do: "10"
+  defp map_month("okt"), do: "10"
+
   defp map_month("november"), do: "11"
+  defp map_month("nov"), do: "11"
+
   defp map_month("december"), do: "12"
+  defp map_month("dec"), do: "12"
+
   defp map_month(month), do: "#{month}"
 
   defp print(input), do: [input] |> IO.ANSI.format() |> IO.puts()
