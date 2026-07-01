@@ -17,9 +17,9 @@ The script can be run from cli.
 
 1. Install elixir: https://elixir-lang.org/install.html
 2. Save the html input as `photos.html` in the `input` folder: see [Input](#input)
-3. Run the script: `elixir jaamo_photo_exporter.exs`
+3. Run the script: `elixir lib/jaamo_photo_exporter.exs`
    If the input is located in another file, pass the path to it like this:
-   `INPUT_FILE=input/example.html elixir jaamo_photo_exporter.exs`
+   `INPUT_FILE=input/example.html elixir lib/jaamo_photo_exporter.exs`
 4. Output can be found in the `output` folder
 
 Give it a try: `INPUT_FILE=input/example.html elixir jaamo_photo_exporter.exs`
